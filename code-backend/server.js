@@ -23,7 +23,16 @@ mongoose.connection.once("open", () => console.log("Connected to mongodb"))
 
 // This is the beginning of a model for the Product object.
 const Product = mongoose.model("Product", {
+  id: Number,
   name: String,
+  type: String,
+  size: String,
+  numberInPack: String,
+  substance: String,
+  price: Number,
+  deliveryTime: String,
+  image: String,
+  description: String
   // Add more attributes to your product here.
 })
 
@@ -41,6 +50,15 @@ app.post("/products", (req, res) => {
     .catch(err => { res.status(400).send(err) })
 })
 
-// Add more endpoints here!
+// retrieve all product objects from the database
+//this file no longer in project but in mongodb,
+// use .find but note that this is to find it in mongo which is not the same thing as
+// e.g. .find or .map functions in javaScript
+
+app.get("/products", (req, res) => {
+  Product.find().then(products => {
+    res.json(products)
+  })
+})
 
 app.listen(8080, () => console.log("Products API listening on port 8080!"))

@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.Product-container {
+  /*background: pink;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+}
+
+.product-item-holder {
+  /*background: red;*/
+  width: 30%;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  border: solid 1px grey;
+}
+h1 {
+ /*padding-left: 20px;*/
+ text-align: center;
+ /*width: 100%;
+ height: 78px;
+ clear: right;*/
+}
+
+.App {
+  /*margin: 20px auto;
+  max-width: 980;
+  text-align: center;
+  justify-content: space-around;*/
+  /*width: 100%;
+  height: auto;*/
+  /*display: flex;
+  justify-content: center;
+  flex-wrap: wrap;*/
+  /*flex-direction: row;
+  flex-wrap: wrap;*/
+  /*background-color: pink;*/
+}
+
+.product-container {
+  /*background-color: red;
+  width: 260px;
+  height: 500px;
+  padding: 5px auto 5px auto;
+  margin: 5px;*/
+  /*display: flex;
+  flex-wrap: wrap;*/
+  /*display: flex;*/
+  /*text-align: center;
+  justify-content: center;*/
+  /*flex-wrap: nowrap;*/
+}
+
+/*.ProductCard {
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-color: blue;
+  padding: 15px auto 15px auto;
+  margin: 10px;
+}*/
+
+img {
+  max-width: 250px;
+  max-height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/*img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-height: 250px;
+  max-width: 250px;
+  text-align: center;
+}*/
+
+li {
+  align-items: flex-end;
+  text-align: left;
+}
