@@ -2,7 +2,7 @@
   "name": "react-starter",
   "version": "0.1.0",
   "private": true,
-  "homepage": ""
+  "homepage": "https://pinkgranny.github.io/21assignment-product-api",
   "dependencies": {
     "eslint-config-technigo": "^1.3.0",
     "react": "^16.0.0",
