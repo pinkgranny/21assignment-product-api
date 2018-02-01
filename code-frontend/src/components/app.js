@@ -11,7 +11,7 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:8080/products").then((response) => {
+    fetch("https://git.heroku.com/assignment-product-api.git").then((response) => {
       return response.json()
     }).then((json) => {
       this.setState({
